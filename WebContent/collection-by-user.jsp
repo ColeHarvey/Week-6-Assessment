@@ -10,7 +10,7 @@
 <body>
 <form method = "post" action = "listnavigationServlet">
 <table>
-<c:forEach items="${requestScope.allComics}" var="currentcomic">
+<c:forEach items="${requestScope.allCollections}" var="currentcomic">
 <tr>
 	<td><input type = "radio" name="id" value="${currentcomic.collectionID}"></td>
 	<td><h2>${currentcomic.collectionName}</h2></td></tr>
